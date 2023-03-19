@@ -1,0 +1,71 @@
+@use 'mixins';
+@use 'globals';
+
+body {
+	background: var(--dark-blue-300);
+	color: var(--white);
+	display: grid;
+	place-items: center;
+	width: 100vw;
+	height: 100vh;
+}
+
+main {
+	width: 90%;
+	max-width: 22rem;
+	background: var(--dark-blue-200);
+	padding: 1.5rem;
+	border-radius: 15px;
+}
+
+.main_image {
+	width: 100%;
+	border-radius: 8px;
+}
+
+.title {
+	margin: 1.5rem 0 1rem;
+}
+
+.content {
+	color: var(--soft-blue);
+	margin-bottom: 1.3rem;
+}
+
+section {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 1rem;
+
+	div {
+		display: flex;
+		gap: 0.3rem;
+		.eth {
+			color: var(--cyan);
+		}
+		.time {
+			color: var(--soft-blue);
+		}
+	}
+}
+
+.line {
+	border: 1px solid var(--soft-blue);
+	margin-bottom: 1rem;
+}
+
+.profile {
+	display: flex;
+	align-items: center;
+	gap: 1.5rem;
+
+	img {
+		width: 2.5rem;
+		border: 1.75px solid var(--white);
+		border-radius: 100%;
+	}
+
+	span {
+		color: var(--soft-blue);
+	}
+}
